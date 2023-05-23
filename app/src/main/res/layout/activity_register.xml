@@ -6,7 +6,7 @@
     android:fillViewport="true"
     android:orientation="vertical">
 
-    <RelativeLayout
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -14,7 +14,17 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/rlRegister"
-            android:background="@color/colorPrimary">
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="0dp">
+
+            <ImageView
+                android:id="@+id/imgAppLogo"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="96dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/app_logo"/>
 
             <include
                 android:id="@+id/toolbar"
@@ -24,10 +34,10 @@
                 android:id="@+id/etName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/toolbar"
+                android:layout_below="@+id/imgAppLogo"
                 android:layout_marginLeft="12dip"
                 android:background="@drawable/text_boundary_background"
-                android:layout_marginTop="30dip"
+                android:layout_marginTop="80dip"
                 android:layout_marginRight="12dip"
                 android:hint="@string/enter_name"
                 android:padding="10dip"
@@ -36,7 +46,8 @@
                 android:drawableLeft="@drawable/ic_action_person"
                 android:drawablePadding="3dp"
                 android:textColor="@android:color/black"
-                android:textSize="16sp"/>
+                android:textSize="16sp"
+                android:autofillHints="Enter your name" />
 
             <EditText
                 android:id="@+id/etEmail"
@@ -127,7 +138,7 @@
                 android:background="@drawable/text_boundary_background"
                 android:layout_below="@+id/etPassword"
                 android:layout_marginLeft="12dip"
-                android:layout_marginTop="6dip"
+                android:layout_marginTop="10dip"
                 android:layout_marginRight="12dip"
                 android:hint="@string/confirm_password"
                 android:inputType="numberPassword"
@@ -167,5 +178,5 @@
             android:padding="10dp"
             android:visibility="gone"
             android:layout_centerInParent="true"/>
-    </RelativeLayout>
+    </FrameLayout>
 </ScrollView>

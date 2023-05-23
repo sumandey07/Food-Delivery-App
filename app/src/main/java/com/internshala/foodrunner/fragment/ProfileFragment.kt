@@ -14,22 +14,19 @@ import androidx.fragment.app.FragmentActivity
 import com.internshala.foodrunner.R
 import com.internshala.foodrunner.util.DrawerLocker
 
-/**
- * A simple [Fragment] subclass.
- */
 class ProfileFragment : Fragment() {
 
     private lateinit var txtUserName: TextView
     private lateinit var txtPhone: TextView
     private lateinit var txtAddress: TextView
     private lateinit var txtEmail: TextView
+    private lateinit var txtPinCode: TextView
     private lateinit var sharedPrefs: SharedPreferences
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_profile, container, false)
         (activity as DrawerLocker).setDrawerEnabled(true)
         sharedPrefs = (activity as FragmentActivity).getSharedPreferences("FoodApp", Context.MODE_PRIVATE)

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1019238449949",
+    "project_id": "foodrunner-4f7a3",
+    "storage_bucket": "foodrunner-4f7a3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1019238449949:android:8fbdc2685f8b40dced17f4",
+        "android_client_info": {
+          "package_name": "com.internshala.foodrunner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1019238449949-8ps6vqo8eodf0jvu4mbhs5js8cht8pma.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.internshala.foodrunner",
+            "certificate_hash": "811ea3b83f40c70b35d790a60c55e5af2ed9630c"
+          }
+        },
+        {
+          "client_id": "1019238449949-c1l7ub3a8h16ptbok87edfs5m2tgs2uk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBy1DkgrCjaV8jA-p_-T_8XN_bsjaVroDU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1019238449949-c1l7ub3a8h16ptbok87edfs5m2tgs2uk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
